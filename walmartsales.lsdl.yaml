@@ -1,0 +1,593 @@
+Version: 3.4.0
+Language: en-US
+DynamicImprovement: HighConfidence
+Entities:
+  walmart_sales_data:
+    Definition:
+      Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Terms:
+    - walmart sales data: {State: Generated}
+    - walmart sale data: {Type: Noun, State: Generated, Weight: 0.78}
+    - walmart sale information: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.762}
+    - walmart sale fact: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.762}
+    - walmart sale info: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.762}
+    - walmart sale statistic: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.762}
+    - walmart sale document: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.739}
+    - walmart sale figure: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.739}
+    - walmart sale record: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.739}
+
+  walmart_sales_data.invoice_ID:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Invoice ID}
+    State: Generated
+    Terms:
+    - invoice ID: {State: Generated}
+    - invoice: {State: Generated, Weight: 0.97}
+    - invoice identification: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - invoice identity: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - invoice identifier: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - invoice credential: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.727}
+    - statement: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - demand: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - account: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - bill: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+
+  walmart_sales_data.branch:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Branch}
+    State: Generated
+    Terms:
+    - branch: {State: Generated}
+    - division: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - subdivision: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - outlet: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - office: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - turnoff: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.466}
+    - turn-off: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.452}
+    - arm: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.452}
+    - tributary: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.452}
+    - turn: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.452}
+    - fork: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.452}
+
+  walmart_sales_data.city:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: City}
+    State: Generated
+    Terms:
+    - city: {State: Generated}
+    - location: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - metropolis: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - municipality: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - town: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.714}
+    - metropolitan: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.714}
+
+  walmart_sales_data.customer_type:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Customer type}
+    State: Generated
+    Terms:
+    - customer type: {State: Generated}
+    - type: {State: Generated, Weight: 0.97}
+    - customer category: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - customer genre: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - customer manner: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - customer variety: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - category: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - genre: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - manner: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - variety: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - customer brand: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.727}
+    - customer class: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.727}
+
+  walmart_sales_data.gender:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Gender}
+    State: Generated
+    Terms:
+    - gender: {State: Generated}
+    - sexuality: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - sex: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.714}
+
+  walmart_sales_data.product_line:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Product line}
+    State: Generated
+    Terms:
+    - product line: {State: Generated}
+    - artifact line: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.6}
+    - item line: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - merchandise line: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - produce line: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - product streak: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.485}
+    - product stroke: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.485}
+    - product stripe: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.485}
+    - product contour: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.485}
+    - product mark: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.485}
+    - product connection: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.475}
+
+  walmart_sales_data.unit_price:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Unit price}
+    State: Generated
+    Terms:
+    - unit price: {State: Generated}
+    - price: {State: Generated, Weight: 0.97}
+    - module price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.6}
+    - element price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.6}
+    - entity price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.6}
+    - group price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - component price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - constituent price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - item price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - part price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - section price: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - unit value: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.485}
+
+  walmart_sales_data.quantity:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Quantity}
+    State: Generated
+    Terms:
+    - quantity: {State: Generated}
+    - extent: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - magnitude: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - measure: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - size: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - capacity: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - mass: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+
+  walmart_sales_data.tax_5:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Tax 5%}
+    State: Generated
+    Terms:
+    - tax 5%: {State: Generated}
+    - tax 5 percentage: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.762}
+    - tax 5 pct: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.739}
+
+  walmart_sales_data.total:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Total}
+    State: Generated
+    Terms:
+    - total: {State: Generated}
+    - aggregate: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.714}
+
+  walmart_sales_data.date:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Date}
+    State: Generated
+    Terms:
+    - date: {State: Generated}
+    - moment: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - period: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.714}
+    SemanticType: Time
+
+  walmart_sales_data.date.variation.date_hierarchy:
+    Definition:
+      Binding: {Table: Walmart Sales Data, VariationSource: Date, VariationSet: Variation, Hierarchy: Date Hierarchy}
+    State: Generated
+    Terms:
+    - date hierarchy: {State: Generated, Weight: 0.97}
+    SemanticType: Time
+
+  walmart_sales_data.date.variation.date_hierarchy.year:
+    Definition:
+      Binding: {Table: Walmart Sales Data, VariationSource: Date, VariationSet: Variation, Hierarchy: Date Hierarchy, HierarchyLevel: Year}
+    State: Generated
+    Terms:
+    - year: {State: Generated}
+    - date year: {State: Generated}
+    - date yr: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - yr: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - moment year: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.6}
+    - period year: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    SemanticType: Time
+
+  walmart_sales_data.date.variation.date_hierarchy.quarter:
+    Definition:
+      Binding: {Table: Walmart Sales Data, VariationSource: Date, VariationSet: Variation, Hierarchy: Date Hierarchy, HierarchyLevel: Quarter}
+    State: Generated
+    Terms:
+    - quarter: {State: Generated}
+    - date quarter: {State: Generated}
+    - date qtr: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.833}
+    - qtr: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.818}
+    - moment quarter: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.6}
+    - period quarter: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    SemanticType: Time
+
+  walmart_sales_data.date.variation.date_hierarchy.month:
+    Definition:
+      Binding: {Table: Walmart Sales Data, VariationSource: Date, VariationSet: Variation, Hierarchy: Date Hierarchy, HierarchyLevel: Month}
+    State: Generated
+    Terms:
+    - month: {State: Generated}
+    - date month: {State: Generated}
+    - date mth: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.75}
+    - mth: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - moment month: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.6}
+    - period month: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    SemanticType: Time
+
+  walmart_sales_data.date.variation.date_hierarchy.day:
+    Definition:
+      Binding: {Table: Walmart Sales Data, VariationSource: Date, VariationSet: Variation, Hierarchy: Date Hierarchy, HierarchyLevel: Day}
+    State: Generated
+    Terms:
+    - day: {State: Generated}
+    - date day: {State: Generated}
+    - moment day: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.6}
+    - period day: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    SemanticType: Time
+
+  walmart_sales_data.time:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Time}
+    State: Generated
+    Terms:
+    - time: {State: Generated}
+    - duration: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - interval: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - moment: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.736}
+    - period: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.714}
+    - timetable: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.714}
+    SemanticType: Time
+
+  walmart_sales_data.payment:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Payment}
+    State: Generated
+    Terms:
+    - payment: {State: Generated}
+    - imbursement: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - compensation: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - disbursement: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - expense: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - recompense: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - fee: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+
+  walmart_sales_data.cog:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: cogs}
+    State: Generated
+    Terms:
+    - cog: {State: Generated}
+    - mechanism: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - cogwheel: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - gearwheel: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - flywheel: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - component: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - part: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - gear: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - wheel: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+
+  walmart_sales_data.gross_margin_percentage:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: gross margin percentage}
+    State: Generated
+    Terms:
+    - gross margin percentage: {State: Generated}
+    - margin percentage: {State: Generated, Weight: 0.97}
+    - aggregate margin percentage: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.657}
+    - overall margin percentage: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.657}
+    - whole margin percentage: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.657}
+    - sum margin percentage: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.591}
+    - total margin percentage: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.591}
+    - gross margin ratio: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.508}
+    - gross margin measurement: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.508}
+    - gross margin calculation: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.508}
+    - margin ratio: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.5}
+    - margin measurement: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.5}
+
+  walmart_sales_data.gross_income:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: gross income}
+    State: Generated
+    Terms:
+    - gross income: {State: Generated}
+    - income: {State: Generated, Weight: 0.97}
+    - aggregate income: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.647}
+    - overall income: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.647}
+    - whole income: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.647}
+    - sum income: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - total income: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.582}
+    - gross revenue: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.5}
+    - gross salary: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.5}
+    - revenue: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - salary: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - gross pay: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.485}
+
+  walmart_sales_data.rating:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: Rating}
+    State: Generated
+    Terms:
+    - rating: {State: Generated}
+    - assessment: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - evaluation: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.491}
+    - score: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - grade: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - ranking: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - mark: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.476}
+    - sailor: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.466}
+    - seaman: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.466}
+    - hand: {Type: Noun, State: Suggested, Source: {Agent: OfficeThesaurus}, Weight: 0.452}
+
+  walmart_sales_data.jour_semaine:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: JourSemaine}
+    State: Generated
+    Terms:
+    - jour semaine: {State: Generated}
+    - JourSemaine: {Type: Noun, State: Generated, Weight: 0.99}
+
+  walmart_sales_data.colonne:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Column: colonne}
+    State: Generated
+    Terms:
+    - colonne: {State: Generated}
+
+  walmart_sales_data.mesuretotal:
+    Definition:
+      Binding: {Table: Walmart Sales Data, Measure: Mesuretotal}
+    State: Generated
+    Terms:
+    - mesuretotal: {State: Generated}
+
+  mesmesure:
+    Definition:
+      Binding: {Table: Mesmesures}
+    State: Generated
+    Terms:
+    - mesmesure: {State: Generated}
+
+  mesmesure.somme_T_vente:
+    Definition:
+      Binding: {Table: Mesmesures, Measure: Somme_T_vente}
+    State: Generated
+    Terms:
+    - somme T vente: {State: Generated}
+    - Somme_T_vente: {Type: Noun, State: Generated, Weight: 0.99}
+
+  mesmesure.sommerating:
+    Definition:
+      Binding: {Table: Mesmesures, Measure: sommerating}
+    State: Generated
+    Terms:
+    - sommerating: {State: Generated}
+
+Relationships:
+  walmart_sales_data_in_city:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    SemanticSlots:
+      Where: walmart_sales_data.city
+    Phrasings:
+    - Preposition:
+        Subject: walmart_sales_data
+        Prepositions:
+        - in: {State: Generated}
+        Object: walmart_sales_data.city
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_invoice_ID:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.invoice_ID}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_branch:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.branch}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_city:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.city}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_customer_type:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.customer_type}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_gender:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.gender}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_product_line:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.product_line}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_unit_price:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.unit_price}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_quantity:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.quantity}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_tax_5:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.tax_5}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_total:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.total}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_date:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.date}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_time:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.time}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_payment:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.payment}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_cog:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.cog}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_gross_margin_percentage:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.gross_margin_percentage}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_gross_income:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.gross_income}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_rating:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.rating}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_jour_semaine:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.jour_semaine}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_colonne:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.colonne}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_mesuretotal:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: walmart_sales_data.mesuretotal}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_mesmesure_somme_T_vente:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: mesmesure.somme_T_vente}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_has_mesmesure_sommerating:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data, Object: mesmesure.sommerating}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_date_has_variation_date_hierarchy:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data.date, Object: walmart_sales_data.date.variation.date_hierarchy}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_date_variation_date_hierarchy_has_year:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data.date.variation.date_hierarchy, Object: walmart_sales_data.date.variation.date_hierarchy.year}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_date_variation_date_hierarchy_has_quarter:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data.date.variation.date_hierarchy, Object: walmart_sales_data.date.variation.date_hierarchy.quarter}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_date_variation_date_hierarchy_has_month:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data.date.variation.date_hierarchy, Object: walmart_sales_data.date.variation.date_hierarchy.month}
+      State: Generated
+      Weight: 0.99
+
+  walmart_sales_data_date_variation_date_hierarchy_has_day:
+    Binding: {Table: Walmart Sales Data}
+    State: Generated
+    Phrasings:
+    - Attribute: {Subject: walmart_sales_data.date.variation.date_hierarchy, Object: walmart_sales_data.date.variation.date_hierarchy.day}
+      State: Generated
+      Weight: 0.99
+
